@@ -49,9 +49,10 @@ NEWSPIDER_MODULE = 'dandb_scrapy.spiders'
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'dandb_scrapy.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   # 'dandb_scrapy.middlewares.MyCustomDownloaderMiddleware': 543,
+    "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 544,
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
