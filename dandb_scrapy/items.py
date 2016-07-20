@@ -11,4 +11,10 @@ import scrapy
 class DandbScrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    duns = scrapy.Field()
+    cname = scrapy.Field()
+    city = scrapy.Field()
+    address = scrapy.Field()
+    countryCode = scrapy.Field()
+    countryName = scrapy.Field()
+    postal_code = scrapy.Field()

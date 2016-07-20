@@ -17,9 +17,11 @@ Base = declarative_base()
 
 
 class Company(Base):
-    __tablename__ = "duns_1M_1"
+    __tablename__ = "duns_company"
 
     duns_id = Column(Integer, primary_key=True)
     company_name = Column(String)
     address = Column(String)
+    country_code = Column(String)
+    city = Column(String)
     postal_code = Column(String)
